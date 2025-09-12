@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="My WebSite">
+    <meta property="og:describtion" content="I'm a front end developer and i created this website to showcase my skills">
+    <meta property="og:picture" content="Anakinjpg.jpg">
+    <meta property="og:url" content="www.myWebSite.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="Anakinjpg.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>MyWebSite2</title>
+</head>
+<body>
+    <section class="theme__button">
+        <button id="theme__toggle">
+            <div class="dark__button">
+                <p class="dark__button__text">Theme-button</p>
+            </div>
+        </button>
+    </section>
+    <section class="poke-API">
+        <div class="enter-poke">
+            <label for="poke" class="text">Enter pokemone: </label>
+            <input type="text" id="poke">
+            <button type="submit" class="see-pokemone">See pokemone</button>
+        </div>
+        <div class="pokemone">
+        </div>
+    </section>
+    <script>
+        document.documentElement.setAttribute('data-theme', 'light');
+        const toggleButton = document.getElementById('theme__toggle');
+        toggleButton.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark'){
+                document.documentElement.setAttribute('data-theme', 'light');
+            }else{
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })
+    </script>
+  <script src="script.js"></script>
+</body>
+</html>

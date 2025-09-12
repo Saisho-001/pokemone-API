@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --background-color: #fff;
+    --text-color: #0f0c36;
+    --con-color: rgb(209, 209, 209);
+}
+
+[data-theme='dark'] {
+    --background-color: #140f46;
+    --text-color: #e0e0e0;
+    --con-color: rgb(56, 56, 56);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme__toggle{
+    border: none;
+    background-color: var(--background-color);
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 1rem;
+}
+
+.dark__button{
+    background-color: var(--text-color);
+    border-radius: 100px;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark__button__text{
+    color: var(--background-color);
+    transition: color 0.3s;
+}
+
+.poke-API{
+    margin: 0 auto;
+    padding-top: 3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--con-color);
+    height: 500px;
+    width: 500px;
+    border-radius: 100px;
+    box-shadow: 0 0 50px 10px var(--text-color);
+}
+
+.enter-poke{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text{
+    font-size: 3rem;
+}
+
+#poke{
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.see-pokemone{
+    border-style: none;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.see-pokemone:hover{
+    background-color: rgb(121, 121, 121);
+}
+
+.see-pokemone:active{
+    background-color: #b9b9b9;
+}
+
+.pokemone{
+    margin-top: 2rem;
+}
+
+img{
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
